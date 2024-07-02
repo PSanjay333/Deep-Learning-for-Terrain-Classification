@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder='templates')
 
 # Load the model
 from tensorflow.keras.models import load_model
-EfficientNetB0_model = load_model("efficientnet_model")
+EfficientNetB0_model = load_model("EfficientnetModel")
 
 # Define class labels
 class_labels = ['Airport', 'BareLand', 'Baseball Field', 'Beach', 'Bridge', 'Center', 'Church', 'Commercial', 'Dense Residential', 'Desert', 'Farmland', 'Forest', 'Industrial', 'Meadow', 'Medium Residential', 'Mountain', 'Park', 'Parking', 'Playground', 'Pond', 'Port', 'Railway Station', 'Resort', 'River', 'School', 'Sparse Residential', 'Square', 'Stadium', 'Storage Tanks', 'Viaduct']
